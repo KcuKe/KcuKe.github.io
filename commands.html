@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Команды — SentinelV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SentinelV</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="commands.html" class="active">Команды</a></li>
+      <li><a href="about.html">О Sentinel</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">Команды</h1>
+    <p class="page-subtitle">Все команды доступны только администраторам чата</p>
+
+    <div class="commands-grid">
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/ban</span>
+          <span class="cmd-args">@user [время] [причина]</span>
+        </div>
+        <p class="cmd-desc">Забанить пользователя. Время: 1h, 1d, 7d, forever. Без времени — навсегда.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/mute</span>
+          <span class="cmd-args">@user [время] [причина]</span>
+        </div>
+        <p class="cmd-desc">Замутить пользователя. Время: 15m, 1h, 24h, 7d. Без времени — 1 час.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/unban</span>
+          <span class="cmd-args">@user</span>
+        </div>
+        <p class="cmd-desc">Разбанить пользователя раньше срока.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/unmute</span>
+          <span class="cmd-args">@user</span>
+        </div>
+        <p class="cmd-desc">Размутить пользователя раньше срока.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/warn</span>
+          <span class="cmd-args">@user [причина]</span>
+        </div>
+        <p class="cmd-desc">Выдать предупреждение. 3 варна = автобан.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/unwarn</span>
+          <span class="cmd-args">@user</span>
+        </div>
+        <p class="cmd-desc">Снять последнее предупреждение.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/warns</span>
+          <span class="cmd-args">@user</span>
+        </div>
+        <p class="cmd-desc">Посмотреть историю предупреждений пользователя.</p>
+      </div>
+
+      <div class="cmd-card">
+        <div class="cmd-header">
+          <span class="cmd-name">/settings</span>
+          <span class="cmd-args"></span>
+        </div>
+        <p class="cmd-desc">Открыть панель настроек бота для текущего чата.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
