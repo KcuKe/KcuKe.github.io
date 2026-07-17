@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelV — Менеджер чата</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SentinelV</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="menu">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="commands.html">Команды</a></li>
+      <li><a href="about.html">О Sentinel</a></li>
+    </ul>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-content">
+      <div class="glow-line"></div>
+      <h1>SentinelV</h1>
+      <p class="subtitle">Менеджер и модератор Telegram-чатов</p>
+      <p class="desc">Автоматическая модерация, система предупреждений, антиспам и полный контроль над группой.</p>
+      <a href="https://t.me/sentinelvbot" class="btn-primary" target="_blank">
+        <span class="btn-icon">→</span>
+        Добавить в чат
+      </a>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Чатов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Онлайн</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Спама</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </main>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
