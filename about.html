@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О Sentinel — SentinelV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">SentinelV</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="commands.html">Команды</a></li>
+      <li><a href="about.html" class="active">О Sentinel</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h1 class="page-title">О SentinelV</h1>
+    
+    <div class="about-section">
+      <div class="about-card">
+        <h2>Что это</h2>
+        <p>SentinelV — чат-менеджер для Telegram, написанный на Python с использованием aiogram. Бот создан для автоматизации модерации групп и облегчения работы администраторов.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>Возможности</h2>
+        <ul class="feature-list">
+          <li><span class="feature-dot"></span>Автоматическая модерация сообщений</li>
+          <li><span class="feature-dot"></span>Система предупреждений (варнов)</li>
+          <li><span class="feature-dot"></span>Муты и баны с таймером</li>
+          <li><span class="feature-dot"></span>Антиспам и защита от флуда</li>
+          <li><span class="feature-dot"></span>Капча для новых участников</li>
+          <li><span class="feature-dot"></span>Статистика чата</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h2>Технологии</h2>
+        <div class="tech-tags">
+          <span class="tech-tag">Python 3.11</span>
+          <span class="tech-tag">aiogram 3.x</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">APScheduler</span>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <h2>Разработчик</h2>
+        <p>Создан с нуля. Код открыт, улучшения приветствуются.</p>
+        <a href="https://github.com/KcuKe" class="link-github" target="_blank">GitHub →</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
